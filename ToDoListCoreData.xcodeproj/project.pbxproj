@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		F1BCABCD29919CF400F5764D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BCABCC29919CF400F5764D /* AppDelegate.swift */; };
 		F1BCABCF29919CF400F5764D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BCABCE29919CF400F5764D /* SceneDelegate.swift */; };
-		F1BCABD129919CF400F5764D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BCABD029919CF400F5764D /* ViewController.swift */; };
 		F1BCABD429919CF400F5764D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BCABD229919CF400F5764D /* Main.storyboard */; };
 		F1BCABD729919CF400F5764D /* ToDoListCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1BCABD529919CF400F5764D /* ToDoListCoreData.xcdatamodeld */; };
 		F1BCABD929919CF500F5764D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BCABD829919CF500F5764D /* Assets.xcassets */; };
 		F1BCABDC29919CF500F5764D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BCABDA29919CF500F5764D /* LaunchScreen.storyboard */; };
+		F1BCABE42991A7E300F5764D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BCABE32991A7E300F5764D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1BCABC929919CF400F5764D /* ToDoListCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BCABCC29919CF400F5764D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1BCABCE29919CF400F5764D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1BCABD029919CF400F5764D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1BCABD329919CF400F5764D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1BCABD629919CF400F5764D /* ToDoListCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListCoreData.xcdatamodel; sourceTree = "<group>"; };
 		F1BCABD829919CF500F5764D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1BCABDB29919CF500F5764D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1BCABDD29919CF500F5764D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1BCABE32991A7E300F5764D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			children = (
 				F1BCABCC29919CF400F5764D /* AppDelegate.swift */,
 				F1BCABCE29919CF400F5764D /* SceneDelegate.swift */,
-				F1BCABD029919CF400F5764D /* ViewController.swift */,
+				F1BCABE32991A7E300F5764D /* TableViewController.swift */,
 				F1BCABD229919CF400F5764D /* Main.storyboard */,
 				F1BCABD829919CF500F5764D /* Assets.xcassets */,
 				F1BCABDA29919CF500F5764D /* LaunchScreen.storyboard */,
@@ -141,10 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1BCABD129919CF400F5764D /* ViewController.swift in Sources */,
 				F1BCABCD29919CF400F5764D /* AppDelegate.swift in Sources */,
 				F1BCABD729919CF400F5764D /* ToDoListCoreData.xcdatamodeld in Sources */,
 				F1BCABCF29919CF400F5764D /* SceneDelegate.swift in Sources */,
+				F1BCABE42991A7E300F5764D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
