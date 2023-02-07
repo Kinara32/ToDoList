@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController {
 
-    var tasks: [String] = []
+    var tasks: [Task] = []
     
     @IBAction func saveTask(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "New task", message: "Please add a new task", preferredStyle: .alert)
         let saveAction = UIAlertAction(title: "Save", style: .default) { action in
             let tf = alertController.textFields?.first
             if let newTask = tf?.text {
-                self.tasks.append(newTask)
+                self.saveTask(withTitle: newTask)
                 self.tableView.reloadData()
             }
         }
@@ -27,6 +28,21 @@ class TableViewController: UITableViewController {
         alertController.addAction(saveAction)
         present(alertController, animated: true)
     }
+    
+    private func saveTask(withTitle title: String) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        guard let entity = NSEntityDescription.entity(forEntityName: "Task", in: context) else {return}
+        let taskObj = Task(entity: entity, insertInto: context)
+        taskObj.title = title
+        
+        do {
+            try context.save()
+        } catch let error {
+            print(error)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,7 +70,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
-        content.text = tasks[indexPath.row]
+        content.text = tasks[indexPath.row].title
         cell.contentConfiguration = content
         return cell
     }
